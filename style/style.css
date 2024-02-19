@@ -1,3 +1,12 @@
+/* CUSTOM PROPS  */
+:root {
+  --grey:  rgb(149, 151, 165);
+  --blackish: rgb(45, 49, 77);
+  --gradient: linear-gradient(134.71deg, rgb(51, 211, 94) 0%,rgb(42, 182, 217) 99.58%);
+  --green: rgb(48, 200, 143);
+}
+
+
 /* GLOBAL STYLES*/
 html {
   box-sizing: border-box;
@@ -15,11 +24,12 @@ body {
  padding: 0%;
  margin: 0%;
  height: 100%;
- font-family: "Arial",sans-serif;
+ font-family: 'Public Sans',"Arial",sans-serif;
  font-size: 16px;
- line-height: 1.5;
- background-color: #fff;
- color: #222;
+ line-height: 26px;
+ letter-spacing: -0.25px;
+ background-color: #fafafa;
+ color: var(--grey);
 }
 img {
   max-width: 100%;
@@ -29,13 +39,47 @@ img {
 /* CONTAINER */
 .container {
 width: 100%;
-max-width: 1200;
+max-width: 1150px;
 margin-right: auto;
 margin-left: auto;
-padding-left: 50px;
-padding-right: 50px;
+padding-left: 20px;
+padding-right: 20px;
 }
 
 .main-content {
   flex-grow: 1;
+}
+
+/* FONTS  */
+/* public-sans-100 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/public-sans-v15-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* public-sans-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/public-sans-v15-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* public-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/public-sans-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* public-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/public-sans-v15-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
